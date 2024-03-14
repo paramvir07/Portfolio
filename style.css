@@ -1,0 +1,14 @@
+.nav_ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+   
+
+
+}
+.nav_li{
+    text-decoration: none;
+    color: aquamarine;
+    border: solid black;
+
+}

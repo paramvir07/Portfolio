@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        .div2 {
+            position: relative;
+            text-align: center;
+            color: rgb(195, 191, 191);
+            height: 600px;
+            width: auto 100%;
+            
+        }
+
+        .div2::before {
+            content: "";
+            background-image: url(background_image.png);
+            background-size: auto contain;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .nav_ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: center; 
+        }
+        .nav_li {
+            text-decoration: none;
+            color: rgb(195, 191, 191);
+            font-size: 25px;
+            
+        }
+        .nav_li:hover {
+            color: rgb(77, 77, 188);
+
+        }
+        .home_div_hello{
+            background-color: rgb(77, 77, 188);
+            padding: 5px;
+            border-radius: 4px;
+        } 
+        .home_download{
+            background:transparent;
+            padding: 9px;
+            border-radius: 4px;
+            border: 2px solid rgb(77, 77, 188);  
+            font-size: 25px;
+            color: rgb(77, 77, 188);
+
+        }
+        .home_download:hover{
+            cursor: pointer;
+
+            background-color: rgb(162, 168, 168);
+        }
+        div{
+            padding: 5px;
+        }
+
+        .about {
+            display: flex;
+            gap: 50px;
+        }
+        .about_left, .about_right,.about_margin{
+            text-align: left;
+            width: 500px;
+            height: 300px; 
+            border: solid rgb(195, 191, 191);
+            padding: 20px;
+            color: rgb(195, 191, 191);
+        }   
+        .footer
+        {
+            background-color: rgb(77, 77, 188) ;
+            width: auto;
+            height:  150px;
+            margin-top:20px;
+            padding-top:10px;
+            color:white;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:center;
+        } 
+
+
+        .icon1,.icon2
+        {
+            width: 50px; 
+            height: 50px; 
+            background-color: rgb(162, 168, 168); 
+            border: none;
+            
+        }
+        .icon1:hover
+        {
+            transition-duration: 1s;
+            background-color: #0072b1;
+            color: rgb(195, 191, 191);
+            border-radius: 15px;
+        }
+        .icon2:hover
+        {
+            transition-duration: 1s;
+            border-radius: 15px;
+            
+        }
+
+
+        
+        
+
+
+/* PROJECTS */
+
+.projects
+{
+    display: flex;
+    gap: 10px;
+}
+.project1, .project2, .project3{
+
+        text-align: left;
+        width: 500px;
+        height: 250px; 
+        border: solid rgb(195, 191, 191);
+        padding: 20px;
+        color: rgb(195, 191, 191);
+        }    
+.project1:hover{  
+    width: 510px;
+    height: 260px;
+}
+.project2:hover{
+    width: 510px;
+    height: 260px;
+}
+.project3:hover{
+    width: 510px;
+    height: 260px;
+}  
+.contact{
+    margin:0 auto;
+    text-align: center;
+            width: 490px;
+            height: 220px; 
+            border: solid rgb(195, 191, 191);
+            padding: 20px;
+            color: rgb(195, 191, 191);
+}
+
+
+    </style>
+</head>
+
+
+
+<body style="background-color: rgb(41, 39, 39)">
+    
+    <nav>
+        <ul class="nav_ul">
+            <li style="font-size: 40px; color:rgb(195, 191, 191); margin-right: 550px; " >
+                Par<span style="color: rgb(77, 77, 188)">amv</span>ir Si<span style="color: rgb(60, 60, 180);">ng</span>h Th<span style ="color: rgb(60, 60, 180);">in</span>d</li>
+            <li><a href="" class="nav_li">Home</a></li>
+            <li><a href="" class="nav_li">About</a></li>
+            <li><a href="" class="nav_li">Portfolio</a></li>
+            <li><a href="" class="nav_li">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="div2">
+        <br><br><br><br><br><br><br><br><br>
+        <div STYLE="font-size: 28px" class="a"><span class="home_div_hello">Hello</span> I'm</div>
+        <div style="font-size: 60px" class="b">Paramvir Singh Thind</div>
+        <div style="font-size: 30px" class="b">Student at <span style="color: rgb(77, 77, 188)">University of The Fraser Valley</span></div>
+        <br>
+        <div>
+            <button class="icon1" >
+                <i class="fa fa-linkedin"></i> </button>
+            <button  class="icon2" >
+                <i class="fa fa-github"></i> </button>
+        </div>
+        <br><br>
+            <div>
+                <a href="" download="Resume.pdf"></a>
+                <button class="home_download">Download CV <i class="fa fa-file"></i></button>
+            </div>
+
+       
+    </div>
+
+<br><br><br><br><br>
+<div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>ABOUT ME</b></center></div> 
+<br>
+<div class="about">
+
+
+    <div class="about_left">
+        <h1 style="color: rgb(77, 77, 188);">About Me</h1>
+        <h3>My main objective is to work in an organization which provides me with ample opportunities to enhance my skills and 
+            incorporate my skills and training to help the company. I am looking forward to roles which will help me release my
+            potential.
+            <br><br>
+            
+        </h3>
+    </div>
+
+
+    <div class="about_right">
+        <h1 style="color: rgb(77, 77, 188);">Technical Skills</h1>
+        <h3>
+            <ul>
+                <li>Web Publishing: HTML, CSS, JavaScript</li>
+                <li>Programming: C++, Java</li>
+                <li>SQL</li>
+                <li>Linux</li>
+                <li>Networking</li>
+                <li>System Analysis and Design</li>
+                <li>User Training and Support</li>
+                <li>Office: Word, Powerpoint, Excel, Access</li>
+                <li>Business and Communications</li>
+            </ul>
+        </h3>
+    </div>
+</div>
+
+<div class="about_margin">
+    <h1 style="color: rgb(77, 77, 188);">Skills</h1>
+    <h3>
+        <ul>
+            <li>Project Management</li>
+            <li>Teamwork</li>
+         <li>Time Management</li>
+            <li>Leadership</li>
+            <li>Active Listening</li>
+            <li>Effective Communication</li>
+        </ul>
+    </h3>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>PROJECTS</b></center></div> 
+<br>
+<div class="projects">
+
+
+    <button class="project1">
+        <h1 style="color: rgb(77, 77, 188);">Java</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi porro sapiente repellat obcaecati esse, eaque illum cupiditate modi doloremque nesciunt maxime ad accusantium perferendis necessitatibus corrupti eveniet harum ex totam.
+        </h3>
+    </button>
+
+
+    <div class="project2">
+        <h1 style="color: rgb(77, 77, 188);">HTML</h1>
+        <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestias maxime quae sed enim. Labore, consequuntur sint quibusdam delectus praesentium fuga obcaecati, aliquam voluptatibus perferendis nihil alias sapiente libero facere!
+        </h3>
+    </div>
+
+
+<div class="project3">
+    <h1 style="color: rgb(77, 77, 188);">User Support</h1>
+    <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus debitis explicabo eaque nihil fugit nam praesentium inventore. Sequi quas quia sit saepe porro officia ut minima repellendus placeat provident.
+    </h3>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+<div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>CONTACT</b></center></div> 
+<br>
+
+
+    <div class="contact">
+        <h1 style="color: rgb(77, 77, 188);">Personal Information</h1>
+        <h3>
+            Name: Paramvir Singh
+            <hr>
+            Email: Paramvir.Thind@student.ufv.ca
+            <hr>
+            Contact: +91 95699-02540
+        </h3>
+    </div>
+    <footer class ="footer"><br>
+        Copyright &copy; 2024 Paramvir Singh Thind. All Rights Reserved
+        <br><br><br>
+        <button class="icon1" >
+            <i class="fa fa-linkedin"></i> </button>
+        <button  class="icon2" >
+            <i class="fa fa-github"></i> </button>
+        
+    </footer>
+
+
+</body>
+</html>
