@@ -78,12 +78,16 @@
         }
         .about_left, .about_right,.about_margin{
             text-align: left;
-            width: 500px;
-            height: 300px; 
+            width: 90%; 
+            max-width: 500px; 
+            margin: 0 auto; 
+            height: 380px; 
             border: solid rgb(195, 191, 191);
             padding: 20px;
             color: rgb(195, 191, 191);
-        }   
+            box-sizing: content-box;
+            font-size: larger;
+          }   
         .footer
         {
             background-color: rgb(77, 77, 188) ;
@@ -96,6 +100,24 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align:center;
         } 
+        .footer .icon1, 
+        .footer .icon2 {
+            border: none;
+            padding: 0;
+            margin: 0;
+           
+           
+        }
+
+        .footer .icon-container {
+            display: flex;
+            gap:10px;
+            justify-content: center; 
+            align-items: center; 
+            height: 100px; 
+            bottom: 10px;
+            margin-bottom: 15px;
+        }
 
 
         .icon1,.icon2
@@ -106,6 +128,7 @@
             border: none;
             margin-right: 10px;
             border-radius: 7px;
+            display: inline;
             
         }
         .icon1:hover
@@ -121,7 +144,11 @@
             border-radius: 15px;
             background-color: white;
         }
-
+        .iconss
+        {
+            display: flex;
+            justify-content: center;
+        }
 
         
         
@@ -129,20 +156,73 @@
 
 /* PROJECTS */
 
-.projects
-{
+    .projects 
+    {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
 }
-.project1, .project2, .project3{
+.project1,.project2,.project3{
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    border: solid rgb(195, 191, 191);
+    padding: 20px;
+    color: rgb(195, 191, 191);
+    box-sizing: border-box;
+    flex-direction: column; 
+}
+    .projectss 
+    {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+.project4
+{
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    border: solid rgb(195, 191, 191);
+    padding: 20px;
+    color: rgb(195, 191, 191);
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-left: 150px;
+}
+.project5
+{
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    border: solid rgb(195, 191, 191);
+    padding: 20px;
+    color: rgb(195, 191, 191);
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-right: auto;
+}
 
-        text-align: left;
-        width: 500px;
-        height: 250px; 
-        border: solid rgb(195, 191, 191);
-        padding: 20px;
-        color: rgb(195, 191, 191);
-        }    
+.view_button {
+    background-color: rgb(77, 77, 188);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: auto; 
+}
+
+.view_button:hover {
+    transition-duration: 0.5s;
+    border-radius: 15px;
+    background-color: rgb(60, 60, 180);
+}
 
   
 .contact{
@@ -178,20 +258,26 @@
         <div STYLE="font-size: 28px" class="a"><span class="home_div_hello">Hello</span> I'm</div>
         <div style="font-size: 60px" class="b">Paramvir Singh Thind</div>
         <div style="font-size: 30px" class="b">Student at <span style="color: rgb(77, 77, 188)">University of The Fraser Valley</span></div>
-        <br>
-        <div>
+        <br><br>
+        <div class ="iconss">
+            <div>
             <button class="icon1" >
-                <i class="fa fa-linkedin"></i> </button>
+                <a href="http://www.linkedin.com/in/paramvirsingh30" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  </button>
+                  </div>
+            <div>
             <button  class="icon2" >
-                <i class="fa fa-github"></i> </button>
+            <a href = "https://github.com/paramvir07" target="_blank">
+                <i class="fa fa-github"></i></a></button>
+        </div>
         </div>
         <br><br>
             <div>
-                <a href="" download="Resume.pdf"></a>
-                <button class="home_download">Download CV <i class="fa fa-file"></i></button>
+                <a href="https://drive.google.com/file/d/16XZRtEFAGpTFXD_B-aUEJgkwncYwHrYb/view?usp=sharing" download="Resume.pdf">
+                <button class="home_download">Download CV <i class="fa fa-file"></i></a></button>
             </div>
-
-       
     </div>
 
 <br><br><br><br><br>
@@ -237,7 +323,7 @@
         <ul>
             <li>Project Management</li>
             <li>Teamwork</li>
-         <li>Time Management</li>
+            <li>Time Management</li>
             <li>Leadership</li>
             <li>Active Listening</li>
             <li>Effective Communication</li>
@@ -263,25 +349,40 @@
 
     <div class="project1">
         <h1 style="color: rgb(77, 77, 188);">Quiz App - Brainy Buzzer</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi porro sapiente repellat obcaecati esse, eaque illum cupiditate modi doloremque nesciunt maxime ad accusantium perferendis necessitatibus corrupti eveniet harum ex totam.
-        </h3>
+        <h3>Created application using Java with the help of an API.</h3>
+        <a href ="https://github.com/paramvir07/Projects/tree/3de745f8843419aa0ba803db045e19eac3ab6e0d/Quiz%20App%20-%20Brainy%20Buzzer">
+        <button class="view_button">View</button></a>
     </div>
 
 
     <div class="project2">
-        <h1 style="color: rgb(77, 77, 188);">Movie Booking Application (Group Project)</h1>
+        <h1 style="color: rgb(77, 77, 188);">Movie Booking App</h1>
         <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestias maxime quae sed enim. Labore, consequuntur sint quibusdam delectus praesentium fuga obcaecati, aliquam voluptatibus perferendis nihil alias sapiente libero facere!
-        </h3>
+            Collaborated with my group members to create an Application for users to get movie ticket details using Java.</h3>
+            <a href="https://github.com/paramvir07/Projects/tree/3de745f8843419aa0ba803db045e19eac3ab6e0d/Movie%20Booking%20Application">
+            <button class="view_button">View</button></a>
     </div>
 
 
 <div class="project3">
-    <h1 style="color: rgb(77, 77, 188);">Software Training Plan for Microsoft Access</h1>
+    <h1 style="color: rgb(77, 77, 188);">Airport Website - Indigo Airlines</h1>
     <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus debitis explicabo eaque nihil fugit nam praesentium inventore. Sequi quas quia sit saepe porro officia ut minima repellendus placeat provident.
-    </h3>
+    Developed Airport website to get flight details with the help of HTML, CSS and JavaScript.</h3>
+        <button class="view_button">View</button>
 </div>
+</div>
+<br><br>
+<div class="projectss">
+    <div class ="project4">
+        <h1 style="color: rgb(77, 77, 188);">Software Training Plan for Microsoft Access</h1>
+        <h3>Recommended the company to use Microsoft Access for their Database.</h3>
+        <button class="view_button">View</button>  
+    </div>
+    <div class ="project5">
+        <h1 style="color: rgb(77, 77, 188);">User Support for PlayStation PS5</h1>
+            <h3>Enhanced user experience via troubleshooting manuals and responsive support across communication.</h3>
+            <button class="view_button">View</button>
+    </div>
 </div>
 
 
@@ -322,16 +423,21 @@
     </div>
 
     <br><br><br><br>
-    <footer class ="footer"><br>
+    <footer class="footer"><br>
         Copyright &copy; 2024 Paramvir Singh Thind. All Rights Reserved
-        <br><br><br>
-        <button class="icon1" >
-            <i class="fa fa-linkedin"></i> </button>
-        <button  class="icon2" >
-            <i class="fa fa-github"></i> </button>
-        
+        <div class="icon-container">
+            <button class="icon1" >
+                <a href="http://www.linkedin.com/in/paramvirsingh30" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </button>
+            <button class="icon2" >
+                <a href ="https://github.com/paramvir07" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+            </button>
+        </div>
     </footer>
-
 
 </body>
 </html>
