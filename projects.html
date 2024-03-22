@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body
+        {
+            max-width: 100%;
+        }
+        .nav_ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: center; 
+        }
+        .nav_li, .nav_li_active {
+            text-decoration: none;
+            color: rgb(195, 191, 191);
+            font-size: 25px;
+            padding: 5px;
+            
+        }
+        .nav_li:hover {
+            color: rgb(77, 77, 188);
+            border-bottom: solid rgb(77, 77, 188);
+
+        }
+        .nav_li_active {
+            color: rgb(77, 77, 188);
+            border-bottom: solid rgb(77, 77, 188);
+
+        } 
+        .project {
+        display: flex;
+        border: solid rgb(195, 191, 191);
+        max-width: auto 100%;
+        }
+    
+        .project_text {
+            width: 75%;
+            padding: 20px;
+            color: rgb(195, 191, 191);
+            
+        }
+        .project_text_h1{
+            color: rgb(77, 77, 188); text-align: center; font-size: 42px;
+        }
+        
+        .project_image {
+            width: 40%;
+            padding: 20px;
+        }
+
+        /* projects view button */
+        .view_button {
+            background-color: rgb(77, 77, 188);
+            color: rgb(195, 191, 191);
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: auto; 
+        }
+
+        .view_button:hover {
+            transition-duration: 0.5s;
+            border-radius: 15px;
+            background-color: rgb(60, 60, 180);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+
+
+
+        .footer
+        {
+            background-color: rgb(77, 77, 188) ;
+            width: auto;
+            height:  165px;
+            margin-top:20px;
+            padding-top:10px;
+            color:rgb(195, 191, 191);  
+            text-align:center;
+        } 
+        
+
+        .icon-container {
+            justify-content: center; 
+            font-size:large;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            gap: 10px ;
+        }
+
+
+        .icon1,.icon2
+        {
+            width: 50px; 
+            height: 50px; 
+            background-color: rgb(195, 191, 191); 
+            color: rgb(77, 77, 188);
+            border: none;
+            margin-right: 10px;
+            border-radius: 7px;
+            padding: 15px;
+            display: inline;   
+        }
+        .icon1:hover
+        {
+            transition-duration: 1s;
+            background-color: #0072b1;
+            color:white;
+            border-radius: 15px;
+        }
+        .icon2:hover
+        {
+            transition-duration: 1s;
+            border-radius: 15px;
+            background-color: white;
+            color:black
+        }
+        .iconss
+        {
+            display: flex;
+            justify-content: center;
+        }
+        
+        </style>
+    </head>
+    <body style="background-color: rgb(41, 39, 39)"; background="">
+        <nav>
+            <ul class="nav_ul">
+                <li style="font-size: 40px; color:rgb(195, 191, 191); margin-right: 550px; " >
+                    Par<span style="color: rgb(77, 77, 188)">amv</span>ir Si<span style="color: rgb(77, 77, 188);">ng</span>h Th<span style ="color: rgb(77, 77, 188);">in</span>d</li>
+                <li><a href="index.html" class="nav_li">Home</a></li>
+                <li><a href="" class="nav_li ">About</a></li>
+                <li><a href="" class="nav_li_active">Projects</a></li>
+                <li><a href="" class="nav_li">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+        <br>
+        <h1 style="color: rgb(195, 191, 191); text-align: center; font-size: 50px;">PROJECTS</h1>
+
+        <div class="project">
+            
+            <div class="project_text">
+                <h1 class="project_text_h1">Quiz App - Brainy Buzzer</h1>
+               <br>
+            <h3>
+                I developed a Java application leveraging an API to facilitate its functionality.
+                My quiz app named Brainy Buzzer offers users an engaging and seamless quiz experience.
+                It starts with simple instructions to help users navigate easily, followed by a details 
+                page where user can customize their quiz difficulty. Once users enter the quiz, they encounter
+                a diverse range of questions across various topics. Upon completion, they receive instant 
+                feedback in the form of a final score. It's a straightforward and enjoyable way to learn and test knowledge.
+            </h3>
+            <br>
+            <a href ="https://github.com/paramvir07/Projects/tree/3de745f8843419aa0ba803db045e19eac3ab6e0d/Quiz%20App%20-%20Brainy%20Buzzer">
+            <center><button class="view_button">View</button></a></center>
+        </div>
+        <div class="project_image">
+            <img src="quiz_app_image.png" alt="Project Image" width="500px">
+        </div>  
+        </div>
+
+
+
+        <br><br><br><br>
+
+        <div class="project">
+            <div class="project_text">
+            <h1 class="project_text_h1">Movie Booking App</h1>
+            <h3>I collaborated with my teammates to build a Java app for users to book their movie tickets and access their ticket details. 
+                In my movie booking app, users start by entering their phone number, which generates a unique token.
+                 With this token, they proceed to select the movie they want to watch and specify details such as the city, cinema, date, 
+                 and time. After selecting their seats from the seating layout, users confirm their choices.
+                  At the payment stage, various payment methods are available for selection. Once payment is confirmed, 
+                  users are prompted to enter their phone number again for verification. Finally, the app displays the ticket details, 
+                  including movie information, cinema location, seat numbers, and payment confirmation. This streamlined process ensures a 
+                  hassle-free movie booking experience for users.
+            </h3>
+            <br>
+            <a href ="https://github.com/paramvir07/Projects/tree/3de745f8843419aa0ba803db045e19eac3ab6e0d/Movie%20Booking%20Application">
+                <center><button class="view_button">View</button></a></center>
+            </div>
+            <div class="project_image">
+                <img src="" alt="Project Image" width="500px">
+            </div>  
+            </div>
+
+
+        
+        <br><br><br><br>
+        <div class="project">
+        <div class="project_text">
+            <h1 class="project_text_h1">Airport Website - Indigo Airlines</h1>
+            <h3>Indigo Airlines is a website where you can book flights. You start by picking where you want to go on the homepage. 
+                If you're new, you can sign up. Then, you fill in your travel details on the flights booking page.
+                The website uses JavaScript in the Sign Up page which make thigns easy for the users. HTML and CSS are used to make
+                the website attractive.
+            
+            </h3>
+            <br>
+            <a href ="https://github.com/paramvir07/Projects/tree/9755c0c30b17a5ff91daf551822028ea256a1118/Airport%20Website%20-%20Indigo%20Airlines">
+                <center><button class="view_button">View</button></a></center>
+            </div>
+            <div class="project_image">
+                <img src="" alt="Project Image" width="500px">
+            </div>  
+            </div>
+
+
+
+
+        <br><br><br><br>
+        <div class="project">
+        <div class="project_text">
+            <h1 class="project_text_h1">Software Training Plan for Microsoft Access</h1>
+            <h3>This project is created as a learning program aimed at helping company employees understand and utilize Microsoft Access 
+                for information management, using Adidas as a hypothetical company scenario. In simple terms, it teaches employees how to
+                 organize, store, and find data effectively. They'll learn to create databases, enter and change information, and ask
+                  questions to get specific answers from their data. The training also covers making forms and reports, which are like 
+                  easy-to-read summaries of the data. By the end of the training, employees will feel more confident using Microsoft 
+                  Access to do their jobs better.
+            <br><br>
+            </h3>
+            <a href ="https://github.com/paramvir07/Projects/tree/9755c0c30b17a5ff91daf551822028ea256a1118/Software%20Training%20Plan%20for%20Microsoft%20Access">
+             <center><button class="view_button">View</button></a></center>
+        </div>
+        <div class="project_image">
+            <img src="" alt="Project Image" width="500px">
+        </div>  
+        </div>
+
+
+
+
+        <br><br><br><br>
+
+        <div class="project">
+        <div class="project_text">
+            <h1 class="project_text_h1">User Support for PlayStation PS5</h1>
+            <h3>The PlayStation user support project helps support agents assist PlayStation users effectively. It covers different
+                 types of help like fixing network issues, adjusting settings, solving hardware and software problems, connecting devices,
+                  and troubleshooting software. The project also deals with common problems like games freezing, the console not turning on,
+                   overheating, and disc reading issues. It provides scripts between user and support agent for different types of problems
+                    in PlayStation. Additionally, it focuses on improving response time, personalizing interactions, gathering feedback,
+                     ensuring quality, and making communication easier. Overall, the project aims to give users a smooth gaming experience
+                      and build trust in the PlayStation brand.
+            <br><br>
+            </h3>
+            <a href ="https://github.com/paramvir07/Projects/tree/9755c0c30b17a5ff91daf551822028ea256a1118/User%20Support%20for%20PlayStation%20PS5">
+             <center><button class="view_button">View</button></a></center>
+        </div>
+        <div class="project_image">
+            <img src="" alt="Project Image" width="500px">
+        </div>  
+        </div>
+
+    
+
+
+
+
+
+
+
+
+
+        <br><br><br><br>
+    <footer class="footer">
+      <h2 style="font-size: 29px;">Connect With Me</h2>  
+        <br>
+        <div class="icon-container">
+            <div>
+            <a href="http://www.linkedin.com/in/paramvirsingh30" class="icon1">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/paramvir07" class="icon2">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+    </body>
+
+</html>
