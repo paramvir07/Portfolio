@@ -36,7 +36,6 @@
             opacity: 0.2;
             z-index: -1;
         }
-
         .nav_ul {
             list-style: none;
             display: flex;
@@ -44,7 +43,7 @@
             align-items: center;
             justify-content: center; 
         }
-        .nav_li {
+        .nav_li, .nav_li_active {
             text-decoration: none;
             color: rgb(195, 191, 191);
             font-size: 25px;
@@ -52,6 +51,11 @@
             
         }
         .nav_li:hover {
+            color: rgb(77, 77, 188);
+            border-bottom: solid rgb(77, 77, 188);
+
+        }
+        .nav_li_active {
             color: rgb(77, 77, 188);
             border-bottom: solid rgb(77, 77, 188);
 
@@ -84,7 +88,8 @@
         .about_left, .about_right,.about_margin{
             text-align: left;
             width: 90%; 
-            max-width: 500px; 
+            max-width: auto; 
+            max-height: auto;
             margin: 0 auto; 
             height: 400px; 
             border: solid rgb(195, 191, 191);
@@ -97,10 +102,10 @@
         {
             background-color: rgb(77, 77, 188) ;
             width: auto;
-            height:  150px;
+            height:  165px;
             margin-top:20px;
             padding-top:10px;
-            color:white;  
+            color:rgb(195, 191, 191);  
             text-align:center;
         } 
         
@@ -109,12 +114,9 @@
             justify-content: center; 
             font-size:large;
             font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            
         }
-        .icon-divider 
-        {
-        margin: 0 10px; 
-        }
-
 
 
         .icon1,.icon2
@@ -149,73 +151,7 @@
             justify-content: center;
         }
 
-        .projects 
-        {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; 
-        gap: 20px;
-        }
-        .project1,.project2,.project3{
-            flex: 1;
-            max-width: 400px;
-            text-align: center;
-            border: solid rgb(195, 191, 191);
-            padding: 20px;
-            color: rgb(195, 191, 191);
-            box-sizing: border-box;
-            flex-direction: column; 
-        }
-            .projectss 
-            {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; 
-            gap: 20px;
-        }
-        .project4
-        {
-            flex: 1;
-            max-width: 400px;
-            text-align: center;
-            border: solid rgb(195, 191, 191);
-            padding: 20px;
-            color: rgb(195, 191, 191);
-            box-sizing: border-box;
-            flex-direction: column;
-            margin-left: 150px;
-        }
-        .project5
-        {
-            flex: 1;
-            max-width: 400px;
-            text-align: center;
-            border: solid rgb(195, 191, 191);
-            padding: 20px;
-            color: rgb(195, 191, 191);
-            box-sizing: border-box;
-            flex-direction: column;
-            margin-right: auto;
-        }
-
-        .view_button {
-            background-color: rgb(77, 77, 188);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: auto; 
-        }
-
-        .view_button:hover {
-            transition-duration: 0.5s;
-            border-radius: 15px;
-            background-color: rgb(60, 60, 180);
-        }
+       
         .contact{
             margin:0 auto;
             text-align: center;
@@ -236,10 +172,10 @@
     <nav>
         <ul class="nav_ul">
             <li style="font-size: 40px; color:rgb(195, 191, 191); margin-right: 550px; " >
-                Par<span style="color: rgb(77, 77, 188)">amv</span>ir Si<span style="color: rgb(60, 60, 180);">ng</span>h Th<span style ="color: rgb(60, 60, 180);">in</span>d</li>
-            <li><a href="" class="nav_li">Home</a></li>
+                Par<span style="color: rgb(77, 77, 188)">amv</span>ir Si<span style="color: rgb(77,77,188);">ng</span>h Th<span style ="color: rgb(77,77,188);">in</span>d</li>
+            <li><a href="" class="nav_li_active">Home</a></li>
             <li><a href="" class="nav_li">About</a></li>
-            <li><a href="" class="nav_li">Projects</a></li>
+            <li><a href="projects.html" class="nav_li">Projects</a></li>
             <li><a href="" class="nav_li">Contact</a></li>
         </ul>
     </nav>
@@ -251,12 +187,16 @@
         <br><br>
 
         <div class="icon-container">
-            <a href="https://www.linkedin.com/in/paramvirsingh30" class="icon1">
+            <div>
+            <a href="http://www.linkedin.com/in/paramvirsingh30" class="icon1">
                 <i class="fa fa-linkedin"></i>
             </a>
+        </div>
+        <div>
             <a href="https://github.com/paramvir07" class="icon2">
                 <i class="fa fa-github"></i>
             </a>
+        </div>
         </div>
         
         <br><br>
@@ -320,65 +260,6 @@
 
 
 
-<br><br><br><br><br><br><br><br><br><br>
-<div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>PROJECTS</b></center></div> 
-<br>
-<div class="projects">
-
-
-    <div class="project1">
-        <h1 style="color: rgb(77, 77, 188);">Quiz App - Brainy Buzzer</h1>
-        <h3>I developed a Java application leveraging an API to facilitate its functionality. 
-            My quiz app named Brainy Buzzer offers users an engaging and seamless quiz experience.
-        <br><br>
-        </h3>
-        <a href ="https://github.com/paramvir07/Projects/tree/3de745f8843419aa0ba803db045e19eac3ab6e0d/Quiz%20App%20-%20Brainy%20Buzzer">
-        <button class="view_button">View</button></a>
-    </div>
-
-
-    <div class="project2">
-        <h1 style="color: rgb(77, 77, 188);">Movie Booking App
-        <br><br>
-        </h1>
-        <h3>
-            I collaborated with my group members to create an Application for users to get movie ticket details using Java.
-              This streamlined process ensures a hassle-free movie booking experience for users.</h3>
-            <a href="https://github.com/paramvir07/Projects/tree/3de745f8843419aa0ba803db045e19eac3ab6e0d/Movie%20Booking%20Application">
-            <button class="view_button">View</button></a>
-    </div>
-
-
-<div class="project3">
-    <h1 style="color: rgb(77, 77, 188);">Airport Website - Indigo Airlines</h1>
-    <h3>
-        Indigo Airlines is a website where you can book flights.
-         The website uses JavaScript in the Sign Up page which make thigns easy for the users.
-          HTML and CSS are used to make the website attractive.</h3>
-    <a href="https://github.com/paramvir07/Projects/tree/5360e86ba0c2da210cf29544b618e4145aa4492c/Airport%20Website%20-%20Indigo%20Airlines">
-        <button class="view_button">View</button></a>
-</div>
-</div>
-<br><br>
-<div class="projectss">
-    <div class ="project4">
-        <h1 style="color: rgb(77, 77, 188);">Software Training Plan for Microsoft Access</h1>
-        <h3>This project is created as a learning program aimed at helping company employees understand and utilize Microsoft Access for 
-            information management, using Adidas as a hypothetical company scenario.
-        <br><br><br>
-        </h3>
-        <a href="https://github.com/paramvir07/Projects/tree/9755c0c30b17a5ff91daf551822028ea256a1118/Software%20Training%20Plan%20for%20Microsoft%20Access">
-        <button class="view_button">View</button> </a> 
-    </div>
-    <div class ="project5">
-        <h1 style="color: rgb(77, 77, 188);">User Support for PlayStation PS5</h1>
-            <h3>The PlayStation user support project helps support agents assist PlayStation users effectively. It covers different types of 
-                help like fixing network issues, adjusting settings, solving hardware and software problems, connecting devices, and 
-                troubleshooting software. </h3>
-            <a href="https://github.com/paramvir07/Projects/tree/9755c0c30b17a5ff91daf551822028ea256a1118/User%20Support%20for%20PlayStation%20PS5">
-            <button class="view_button">View</button></a>
-    </div>
-</div>
 
 <br><br><br><br><br><br><br><br>
 <div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>CONTACT</b></center></div> 
@@ -398,17 +279,21 @@
 
     <br><br><br><br><br><br><br>
     <footer class="footer">
-    <h2>Connect With Me</h2>  
-    <br>
-    <div class="icon-container">
-        <a href="https://www.linkedin.com/in/paramvirsingh30" class="icon1">
-            <i class="fa fa-linkedin"></i>
-        </a>
-        <span class="icon-divider" style="font-size: 30px;">|</span>  
-        <a href="https://github.com/paramvir07" class="icon2">
-            <i class="fa fa-github"></i>
-        </a>
-    </div>
-</footer>
+        <h2 style="font-size: 29px;">Connect With Me</h2>  
+          <br>
+          <div class="icon-container">
+              <div>
+              <a href="http://www.linkedin.com/in/paramvirsingh30" class="icon1">
+                  <i class="fa fa-linkedin"></i>
+              </a>
+          </div>
+          <div>
+              <a href="https://github.com/paramvir07" class="icon2">
+                  <i class="fa fa-github"></i>
+              </a>
+          </div>
+          </div>
+      </footer>
+
 </body>
 </html>
