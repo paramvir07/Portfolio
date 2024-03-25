@@ -85,7 +85,7 @@
             display: flex;
             gap: 50px;
         }
-        .about_left, .about_right,.about_margin{
+        .about_left, .about_center,.about_right{
             text-align: left;
             width: 90%; 
             max-width: auto; 
@@ -161,24 +161,26 @@
                     padding: 20px;
                     color: rgb(195, 191, 191);
         }
-
     </style>
+
 </head>
 
 
 
 <body style="background-color: rgb(41, 39, 39)">
+ 
     
-    <nav>
+    <nav style="position: fixed; top: 0; width: 100%; background-color: rgb(41, 39, 39) ">
         <ul class="nav_ul">
             <li style="font-size: 40px; color:rgb(195, 191, 191); margin-right: 550px; " >
                 Par<span style="color: rgb(77, 77, 188)">amv</span>ir Si<span style="color: rgb(77,77,188);">ng</span>h Th<span style ="color: rgb(77,77,188);">in</span>d</li>
-            <li><a href="" class="nav_li_active">Home</a></li>
-            <li><a href="" class="nav_li">About</a></li>
+            <li><a href="index.html" class="nav_li_active">Home</a></li>
+            <li><a href="#about" class="nav_li">About</a></li>
             <li><a href="projects.html" class="nav_li">Projects</a></li>
-            <li><a href="" class="nav_li">Contact</a></li>
+            <li><a href="#contact" class="nav_li">Contact</a></li>
         </ul>
     </nav>
+    <br><br><br>
     <div class="div2">
         <br><br><br><br><br><br><br><br><br>
         <div STYLE="font-size: 28px" class="a"><span class="home_div_hello">Hello</span> I'm</div>
@@ -206,7 +208,9 @@
             </div>
     </div>
 
-<br><br><br><br><br>
+<br><br>
+<div id="about"></div>
+<br><br><br>
 <div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>ABOUT ME</b></center></div> 
 <br>
 <div class="about">
@@ -225,7 +229,7 @@
     </div>
 
 
-    <div class="about_right">
+    <div class="about_center">
         <h1 style="color: rgb(77, 77, 188);">Technical Skills</h1>
         <h3>
             <ul>
@@ -243,7 +247,7 @@
     </div>
 
 
-<div class="about_margin">
+<div class="about_right">
     <h1 style="color: rgb(77, 77, 188);">Skills</h1>
     <h3>
         <ul>
@@ -261,7 +265,9 @@
 
 
 
-<br><br><br><br><br><br><br><br>
+<br><br>
+<div id="contact"></div>
+<br><br><br>
 <div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>CONTACT</b></center></div> 
 <br>
 
@@ -277,7 +283,7 @@
         </h3>
     </div>
 
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <footer class="footer">
         <h2 style="font-size: 29px;">Connect With Me</h2>  
           <br>
