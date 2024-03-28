@@ -11,6 +11,33 @@
         {
             max-width: 100%;
         }
+        /* nav bar */
+        .nav_ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: center; 
+        }
+        .nav_li, .nav_li_active {
+            text-decoration: none;
+            color: rgb(195, 191, 191);
+            font-size: 25px;
+            padding: 5px;
+            
+        }
+        .nav_li:hover {
+            color: rgb(77, 77, 188);
+            border-bottom: solid rgb(77, 77, 188);
+
+        }
+        .nav_li_active {
+            color: rgb(77, 77, 188);
+            border-bottom: solid rgb(77, 77, 188);
+
+        }
+
+        /* home */
         .div2 
         {
             position: relative;
@@ -36,39 +63,17 @@
             opacity: 0.2;
             z-index: -1;
         }
-        .nav_ul {
-            list-style: none;
-            display: flex;
-            gap: 50px;
-            align-items: center;
-            justify-content: center; 
-        }
-        .nav_li, .nav_li_active {
-            text-decoration: none;
-            color: rgb(195, 191, 191);
-            font-size: 25px;
-            padding: 5px;
-            
-        }
-        .nav_li:hover {
-            color: rgb(77, 77, 188);
-            border-bottom: solid rgb(77, 77, 188);
-
-        }
-        .nav_li_active {
-            color: rgb(77, 77, 188);
-            border-bottom: solid rgb(77, 77, 188);
-
-        }
+        
         .home_div_hello{
             background-color: rgb(77, 77, 188);
             padding: 5px;
             border-radius: 4px;
         } 
+        /*home- resume button */
+        
         .home_download{
             background: transparent;
             padding: 9px;
-            border-radius: 4px;
             border: 2px solid rgb(77, 77, 188);  
             font-size: 25px;
             border-radius: 7px;
@@ -76,31 +81,69 @@
         .home_download:hover{
             cursor: pointer;
             background-color: rgb(195, 191, 191);
+            border: none;
         }
+    
+
+
         div{
             padding: 5px;
         }
+
+        /* about */
 
         .about {
             display: flex;
             gap: 50px;
         }
+        
         .about_left, .about_center,.about_right{
             text-align: left;
-            width: 90%; 
+            width: 450px; 
             max-width: auto; 
             max-height: auto;
             margin: 0 auto; 
-            height: 400px; 
             border: solid rgb(195, 191, 191);
             padding: 20px;
             color: rgb(195, 191, 191);
             box-sizing: content-box;
             font-size: larger;
-          }   
+            border-radius: 10px;
+            background-color: rgba(77, 77, 188, 0.1);
+          } 
+
+          /* about-certificate button */
+        .certificate_download{
+            background: transparent;
+            padding: 4px;
+            border: none;
+            font-size: 20px;
+            border-radius: 5px;
+            
+            
+        }
+        .certificate_download:hover{
+            background-color: rgb(195, 191, 191,0.8);
+        }
+
+        /* contact */
+
+          .contact{
+            margin:0 auto;
+            text-align: center;
+            width: 490px;
+            height: 220px; 
+            border: solid rgb(195, 191, 191);
+            padding: 20px;
+            color: rgb(195, 191, 191);
+            background-color: rgba(77, 77, 188, 0.1);
+            border-radius: 10px;
+        }
+
+        /* footer  */ 
         .footer
         {
-            background-color: rgb(77, 77, 188) ;
+            background-color: rgb(77, 77, 188,0.7) ;
             width: auto;
             height:  165px;
             margin-top:20px;
@@ -109,16 +152,16 @@
             text-align:center;
         } 
         
-
+        /* github and linkedin icons */
         .icon-container {
             justify-content: center; 
             font-size:large;
-            font-family: Arial, Helvetica, sans-serif;
+           
             display: flex;
             
         }
 
-
+    
         .icon1,.icon2
         {
             width: 50px; 
@@ -145,31 +188,15 @@
             background-color: white;
             color:black
         }
-        .iconss
-        {
-            display: flex;
-            justify-content: center;
-        }
 
-       
-        .contact{
-            margin:0 auto;
-            text-align: center;
-                    width: 490px;
-                    height: 220px; 
-                    border: solid rgb(195, 191, 191);
-                    padding: 20px;
-                    color: rgb(195, 191, 191);
-        }
     </style>
 
 </head>
 
 
-
 <body style="background-color: rgb(41, 39, 39)">
  
-    
+    <!-- nav bar -->
     <nav style="position: fixed; top: 0; width: 100%; background-color: rgb(41, 39, 39) ">
         <ul class="nav_ul">
             <li style="font-size: 40px; color:rgb(195, 191, 191); margin-right: 550px; " >
@@ -181,11 +208,13 @@
         </ul>
     </nav>
     <br><br><br>
+    <!-- home -->
     <div class="div2">
+
         <br><br><br><br><br><br><br><br><br>
         <div STYLE="font-size: 28px" class="a"><span class="home_div_hello">Hello</span> I'm</div>
         <div style="font-size: 60px" class="b">Paramvir Singh Thind</div>
-        <div style="font-size: 30px" class="b">Student at <span style="color: rgb(77, 77, 188)">University of The Fraser Valley</span></div>
+        <div style="font-size: 30px" class="b"><span style="color: rgb(77, 77, 188)">BCIS</span> Student at <span style="color: rgb(77, 77, 188)">University of The Fraser Valley</span></div>
         <br><br>
 
         <div class="icon-container">
@@ -203,8 +232,8 @@
         
         <br><br>
             <div>
-                <a href="https://drive.google.com/file/d/16XZRtEFAGpTFXD_B-aUEJgkwncYwHrYb/view?usp=sharing" download="Resume.pdf" style=" color: rgb(77, 77, 188);text-decoration:none ;" target="blank">
-                <button class="home_download">Resume <i class="fa fa-file"></i></a></button>
+                <a href="https://drive.google.com/file/d/1byh7AVfTSyikbmt-cWDjhjdNpMvS5779/view?usp=sharing" download="Resume.pdf" style=" color: rgb(77, 77, 188);text-decoration:none ;" target="blank">
+                <button class="home_download" >Resume <i class="fa fa-file"></i></a></button>
             </div>
     </div>
 
@@ -213,43 +242,47 @@
 <br><br><br>
 <div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>ABOUT ME</b></center></div> 
 <br>
+
+
+<!-- about -->
 <div class="about">
 
 
     <div class="about_left">
-        <h1 style="color: rgb(77, 77, 188);">About Me</h1>
-        <h3>Motivated and detail-oriented BCIS student with a strong academic background in computer science. 
+        <center><h1 style="color: rgb(77, 77, 188);">About Me</h1></center>
+        <p>Motivated and detail-oriented BCIS student with a strong academic background in computer science. 
             I'm excited about diving into projects to learn new things and gain hands-on experience that will 
             help me grow. Passionate about making a positive impact and contributing to the success of the 
             company through dedication, innovation, and a collaborative spirit. Eager to leverage my skills and 
             expertise to help achieve organizational goals and drive growth.
             <br><br>
             
-        </h3>
+        </p>
     </div>
 
 
     <div class="about_center">
-        <h1 style="color: rgb(77, 77, 188);">Technical Skills</h1>
-        <h3>
+        <center><h1 style="color: rgb(77, 77, 188);">Technical Skills</h1></center>
+        <p>
             <ul>
                 <li>Web Publishing: HTML, CSS, JavaScript</li>
                 <li>Programming: C++, Java</li>
                 <li>SQL</li>
-                <li>Linux</li>
-                <li>Networking</li>
+                <li>Minitab, SPSS</li>
+                <li>Linux: Kali Linux, Ubuntu</li>
+                <li>Networking: Cisco</li>
                 <li>System Analysis and Design</li>
                 <li>User Training and Support</li>
                 <li>Office: Word, Powerpoint, Excel, Access</li>
                 <li>Business and Communications</li>
             </ul>
-        </h3>
+        </p>
     </div>
 
 
 <div class="about_right">
-    <h1 style="color: rgb(77, 77, 188);">Skills</h1>
-    <h3>
+    <center><h1 style="color: rgb(77, 77, 188);">Skills</h1></center>
+    <p>
         <ul>
             <li>Project Management</li>
             <li>Teamwork</li>
@@ -257,32 +290,89 @@
             <li>Leadership</li>
             <li>Active Listening</li>
             <li>Effective Communication</li>
-        </ul>
+        <p>
     </h3>
 </div>
 </div>
+<br><br>
 
 
 
+
+
+<div class="about">
+
+    <div class="about_left">
+        <center><h1 style="color: rgb(77, 77, 188);">Academic Excellence</h1></center>      
+
+    <h2>Dean's List</h2>
+    <h4 style="margin-top: -18px;">Fraser Valley India | Summer 2023</h4>
+
+
+    <p>
+        At the award ceremony in 2024 at Fraser Valley India Campus, I was proud to receive the Dean's List Award for doing really well academically. This award means a lot to me because it shows that all the hard work I put into my studies paid off. Whether it was tough assignments or tricky projects, I always tried my best to do a great job. Getting this award reminds me that if you work hard and never give up, you can achieve your goals. I'm thankful for this recognition, and it motivates me to keep learning and growing.
+    <br><br><br>
+    </p>
+   
+    Certificate: 
+    <a href="https://drive.google.com/file/d/1xk0XVveiIGSeVoqXlFKwSrCLss7OtpDQ/view?usp=sharing" download="Resume.pdf" style=" color: rgb(77, 77, 188);text-decoration:none ;" target="blank">
+        <button class="certificate_download"><i class="fa fa-file"></i></a></button>
+    
+    </div>
+
+
+    <div class="about_center">
+        <center><h1 style="color: rgb(77, 77, 188);">Volunteer Work</h1></center>
+
+    <h2>QBIZ Grand Finale</h2>
+    <h4 style="margin-top: -18px;">Fraser Valley India | November 2022</h4>
+    <p>
+        As a volunteer for the QBIZ Grand Finale, I conducted an orientation session for participants at the Fraser Valley India campus. I guided them through key locations and provided essential information for their comfort. During the quiz, I explained the participants how quiz would work, what the rules were, and what we expect from them. I made sure everyone understood and didn't have any questions, so they could feel confident during the quiz.. My efforts contributed to a successful event, showcasing my commitment to fostering a positive experience for all involved.</p>
+        
+        Certificate: 
+        <a href="https://drive.google.com/file/d/1QnXAYG-x5JOHI5lPdwtYZCg60HJyADQv/view?usp=sharing" download="Resume.pdf" style=" color: rgb(77, 77, 188);text-decoration:none ;" target="blank">
+        <button class="certificate_download"><i class="fa fa-file"></i></a></button>
+
+    </div>
+
+
+<div class="about_right">
+    <center><h1 style="color: rgb(77, 77, 188);">Education</h1></center>
+    <h2>Bachelor's of Computer Information Systems</h2>
+    <h4 style="margin-top: -18px;">University of the Fraser Valley | 2022 - 2026</h4>
+    <p>
+        <li>3.18 CGPA</li>
+        </p>
+
+        <h2>Humanities</h2>
+    <h4 style="margin-top: -18px;">B A A Guru Nanak Public School, Nabha <br> <span>| 2021 - 2022</span></h4>
+    <p>
+        <li>Final Grade - 74.6%</li>
+        </p>
+</div>
+</div>
+<br><br>
+
+<!-- contact -->
 
 <br><br>
 <div id="contact"></div>
 <br><br><br>
 <div style="font-size: 45px; color:rgb(195, 191, 191);"><center><b>CONTACT</b></center></div> 
 <br>
-
-
     <div class="contact">
         <h1 style="color: rgb(77, 77, 188);">Personal Information</h1>
         <h3>
             Name: Paramvir Singh Thind
             <hr>
-            Email: Paramvir.Thind@student.ufv.ca
+            Email: <a style="color: rgb(195, 191, 191);" href=mailto:“Paramvir.Thind@student.ufv.ca”>Paramvir.Thind@student.ufv.ca</a>
             <hr>
             Contact: +91 95699-02540
         </h3>
     </div>
 
+
+    <!-- footer -->
     <br><br><br><br><br><br>
     <footer class="footer">
         <h2 style="font-size: 29px;">Connect With Me</h2>  
@@ -290,7 +380,7 @@
           <div class="icon-container">
               <div>
               <a href="http://www.linkedin.com/in/paramvirsingh30" class="icon1">
-                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-linkedin"> <span id="content"></span></i>
               </a>
           </div>
           <div>
